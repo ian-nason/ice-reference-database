@@ -1,0 +1,2 @@
+duckdb==1.5.5
+datapond-build @ git+https://github.com/datapond-db/datapond-build@cee5ea7efcb4cab8650216f96fdadc6a6ac4c8c0

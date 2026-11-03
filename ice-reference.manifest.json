@@ -1,0 +1,600 @@
+{
+  "dataset": "ice-reference",
+  "built_utc": "2026-11-03T01:38:54.446707+00:00",
+  "validate_only": false,
+  "config": {
+    "memory_limit": "128MiB",
+    "threads": "1",
+    "max_temp_directory_size": "0B",
+    "preserve_insertion_order": "true",
+    "autoinstall_known_extensions": "false"
+  },
+  "physical_free_before": 5213061120,
+  "reserve_bytes": 536870912,
+  "working_budget_bytes": 134217728,
+  "tables": {
+    "facilities": {
+      "rows": 878,
+      "schema": [
+        [
+          "_source_row",
+          "BIGINT",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "detention_facility_code",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "name",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "address",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "city",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "county",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "county_fips_code",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "core_based_statistical_area",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "core_based_statistical_area_code",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "core_based_statistical_area_type",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "combined_statistical_area",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "combined_statistical_area_code",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "state",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "state_fips_code",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "zip",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "address_full",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "latitude",
+          "DOUBLE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "longitude",
+          "DOUBLE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "field_office",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "federal_court_district_of_confinement",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "federal_court_circuit_of_confinement",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ]
+      ],
+      "null_counts": {
+        "_source_row": 0,
+        "detention_facility_code": 1,
+        "name": 0,
+        "address": 73,
+        "city": 73,
+        "county": 76,
+        "county_fips_code": 76,
+        "core_based_statistical_area": 166,
+        "core_based_statistical_area_code": 166,
+        "core_based_statistical_area_type": 166,
+        "combined_statistical_area": 356,
+        "combined_statistical_area_code": 356,
+        "state": 0,
+        "state_fips_code": 76,
+        "zip": 73,
+        "address_full": 73,
+        "latitude": 75,
+        "longitude": 75,
+        "field_office": 73,
+        "federal_court_district_of_confinement": 72,
+        "federal_court_circuit_of_confinement": 72
+      },
+      "source_equality_differences": 0,
+      "source_ordinal_differences": 0,
+      "unit": "One detention-facility directory record; not a detention event or historical facility panel",
+      "temporal_semantics": "reference snapshot, not historical panel",
+      "candidate_key": null,
+      "date_ranges": {},
+      "duplicate_nonnull_facility_codes": 0,
+      "coordinate_range_errors": 0
+    },
+    "offices": {
+      "rows": 275,
+      "schema": [
+        [
+          "_source_row",
+          "BIGINT",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "office_name",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "office_name_short",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "agency",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "field_office_name",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "office_type",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "address",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "city",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "state",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "zip",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "zip_4",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "address_full",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "area",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "latitude",
+          "DOUBLE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "longitude",
+          "DOUBLE",
+          "YES",
+          null,
+          null,
+          null
+        ]
+      ],
+      "null_counts": {
+        "_source_row": 0,
+        "office_name": 0,
+        "office_name_short": 121,
+        "agency": 0,
+        "field_office_name": 154,
+        "office_type": 0,
+        "address": 5,
+        "city": 0,
+        "state": 0,
+        "zip": 1,
+        "zip_4": 1,
+        "address_full": 5,
+        "area": 50,
+        "latitude": 5,
+        "longitude": 5
+      },
+      "source_equality_differences": 0,
+      "source_ordinal_differences": 0,
+      "unit": "One office directory record across ERO, HSI and other listed agencies; not an ERO-only jurisdiction",
+      "temporal_semantics": "reference snapshot, not historical panel",
+      "candidate_key": null,
+      "date_ranges": {},
+      "coordinate_range_errors": 0
+    },
+    "aor": {
+      "rows": 26,
+      "schema": [
+        [
+          "_source_row",
+          "BIGINT",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "office_name",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "area_of_responsibility_name",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "geometry_wkb",
+          "BLOB",
+          "YES",
+          null,
+          null,
+          null
+        ]
+      ],
+      "null_counts": {
+        "_source_row": 0,
+        "office_name": 1,
+        "area_of_responsibility_name": 0,
+        "geometry_wkb": 0
+      },
+      "source_equality_differences": 0,
+      "source_ordinal_differences": 0,
+      "unit": "One ERO area-of-responsibility record; 25 geographic areas plus one nongeographic HQ placeholder",
+      "temporal_semantics": "reference snapshot, not historical panel",
+      "candidate_key": null,
+      "empty_geometry": 1,
+      "wkb_roundtrip_differences": 0,
+      "date_ranges": {}
+    },
+    "county_aor": {
+      "rows": 3231,
+      "schema": [
+        [
+          "_source_row",
+          "BIGINT",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "STATEFP",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "COUNTYFP",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "COUNTYNS",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "GEOIDFQ",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "GEOID",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "NAME",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "NAMELSAD",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "STUSPS",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "STATE_NAME",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "LSAD",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "ALAND",
+          "DOUBLE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "AWATER",
+          "DOUBLE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "office_name",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "notes",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "area_of_responsibility_name",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "geometry_wkb",
+          "BLOB",
+          "YES",
+          null,
+          null,
+          null
+        ]
+      ],
+      "null_counts": {
+        "_source_row": 0,
+        "STATEFP": 1,
+        "COUNTYFP": 1,
+        "COUNTYNS": 1,
+        "GEOIDFQ": 1,
+        "GEOID": 1,
+        "NAME": 1,
+        "NAMELSAD": 1,
+        "STUSPS": 1,
+        "STATE_NAME": 1,
+        "LSAD": 1,
+        "ALAND": 1,
+        "AWATER": 1,
+        "office_name": 1,
+        "notes": 3134,
+        "area_of_responsibility_name": 0,
+        "geometry_wkb": 0
+      },
+      "source_equality_differences": 0,
+      "source_ordinal_differences": 0,
+      "unit": "One county-to-ERO-area assignment record; 3,230 county records plus one nongeographic HQ placeholder",
+      "temporal_semantics": "reference snapshot, not historical panel",
+      "candidate_key": null,
+      "empty_geometry": 1,
+      "wkb_roundtrip_differences": 0,
+      "date_ranges": {},
+      "duplicate_nonnull_geoids": 0
+    }
+  },
+  "source_hashes_verified": true,
+  "duckdb": "1.5.5",
+  "status": "passed source-preserving ingestion; source anomalies retained for review",
+  "physical_free_after": 5186846720,
+  "database_bytes": 26226688,
+  "database_sha256": "c0c6f79bea8ad54e84c29103a7d854b68a381d931e104e2a3ccc03c1c80d70a5",
+  "final_budget_check": {
+    "work_bytes": 26226688,
+    "free_bytes": 5186846720
+  }
+}

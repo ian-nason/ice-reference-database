@@ -1,0 +1,112 @@
+{
+  "id": "ice-reference",
+  "data_license": "CC0-1.0",
+  "downloads": [
+    {
+      "url": "https://github.com/deportationdata/ice-detention-facilities/raw/a311796374555f100435ae7578cac2a945eea5b1/data/facilities-latest.parquet",
+      "bytes": 116979,
+      "sha256": "cce1c18e657af4fdfe99650fbe7925f02b435e4e08457e1b51f1741c641dfb3a",
+      "local_path": "sources/facilities-latest.parquet"
+    },
+    {
+      "url": "https://github.com/deportationdata/ice-offices/raw/1915d7a7a5bf0c16a395102fc8140ad6cd8bc83e/data/ice-offices.parquet",
+      "bytes": 44347,
+      "sha256": "d4038b36d29eb146f6457172f5222d597e255cfcb320911fbbdc4afc37e4c84f",
+      "local_path": "sources/ice-offices.parquet"
+    },
+    {
+      "url": "https://github.com/deportationdata/ice-offices/raw/1915d7a7a5bf0c16a395102fc8140ad6cd8bc83e/data/ice-aor-shp.parquet",
+      "bytes": 4015302,
+      "sha256": "1e66b952ffb67d06f6207270c1bdf3f13bf7d309ca73b1272e05a69b0e3f0e3e",
+      "local_path": "sources/ice-aor-shp.parquet"
+    },
+    {
+      "url": "https://github.com/deportationdata/ice-offices/raw/1915d7a7a5bf0c16a395102fc8140ad6cd8bc83e/data/ice-aor-county-shp.parquet",
+      "bytes": 16800306,
+      "sha256": "5358da3f6c9a800f59d45172ef20c59cfe6b2f74d01d385c0ee74fd8c6a696ec",
+      "local_path": "sources/ice-aor-county-shp.parquet"
+    }
+  ],
+  "tables": [
+    {
+      "table": "facilities",
+      "rows": 878,
+      "file": "facilities-latest.parquet",
+      "local_path": "sources/facilities-latest.parquet",
+      "bytes": 116979,
+      "sha256": "cce1c18e657af4fdfe99650fbe7925f02b435e4e08457e1b51f1741c641dfb3a",
+      "source": {
+        "repo": "deportationdata/ice-detention-facilities",
+        "commit": "a311796374555f100435ae7578cac2a945eea5b1",
+        "path": "data/facilities-latest.parquet",
+        "url": "https://github.com/deportationdata/ice-detention-facilities/raw/a311796374555f100435ae7578cac2a945eea5b1/data/facilities-latest.parquet",
+        "bytes": 116979,
+        "sha256": "cce1c18e657af4fdfe99650fbe7925f02b435e4e08457e1b51f1741c641dfb3a",
+        "data_license": "CC0-1.0",
+        "hash_verified": true
+      },
+      "unit": "One detention-facility directory record; not a detention event or historical facility panel",
+      "temporal_semantics": "reference snapshot, not historical panel"
+    },
+    {
+      "table": "offices",
+      "rows": 275,
+      "file": "ice-offices.parquet",
+      "local_path": "sources/ice-offices.parquet",
+      "bytes": 44347,
+      "sha256": "d4038b36d29eb146f6457172f5222d597e255cfcb320911fbbdc4afc37e4c84f",
+      "source": {
+        "repo": "deportationdata/ice-offices",
+        "commit": "1915d7a7a5bf0c16a395102fc8140ad6cd8bc83e",
+        "path": "data/ice-offices.parquet",
+        "url": "https://github.com/deportationdata/ice-offices/raw/1915d7a7a5bf0c16a395102fc8140ad6cd8bc83e/data/ice-offices.parquet",
+        "bytes": 44347,
+        "sha256": "d4038b36d29eb146f6457172f5222d597e255cfcb320911fbbdc4afc37e4c84f",
+        "data_license": "CC0-1.0",
+        "hash_verified": true
+      },
+      "unit": "One office directory record across ERO, HSI and other listed agencies; not an ERO-only jurisdiction",
+      "temporal_semantics": "reference snapshot, not historical panel"
+    },
+    {
+      "table": "aor",
+      "rows": 26,
+      "file": "ice-aor-shp.parquet",
+      "local_path": "sources/ice-aor-shp.parquet",
+      "bytes": 4015302,
+      "sha256": "1e66b952ffb67d06f6207270c1bdf3f13bf7d309ca73b1272e05a69b0e3f0e3e",
+      "source": {
+        "repo": "deportationdata/ice-offices",
+        "commit": "1915d7a7a5bf0c16a395102fc8140ad6cd8bc83e",
+        "path": "data/ice-aor-shp.parquet",
+        "url": "https://github.com/deportationdata/ice-offices/raw/1915d7a7a5bf0c16a395102fc8140ad6cd8bc83e/data/ice-aor-shp.parquet",
+        "bytes": 4015302,
+        "sha256": "1e66b952ffb67d06f6207270c1bdf3f13bf7d309ca73b1272e05a69b0e3f0e3e",
+        "data_license": "CC0-1.0",
+        "hash_verified": true
+      },
+      "unit": "One ERO area-of-responsibility record; 25 geographic areas plus one nongeographic HQ placeholder",
+      "temporal_semantics": "reference snapshot, not historical panel"
+    },
+    {
+      "table": "county_aor",
+      "rows": 3231,
+      "file": "ice-aor-county-shp.parquet",
+      "local_path": "sources/ice-aor-county-shp.parquet",
+      "bytes": 16800306,
+      "sha256": "5358da3f6c9a800f59d45172ef20c59cfe6b2f74d01d385c0ee74fd8c6a696ec",
+      "source": {
+        "repo": "deportationdata/ice-offices",
+        "commit": "1915d7a7a5bf0c16a395102fc8140ad6cd8bc83e",
+        "path": "data/ice-aor-county-shp.parquet",
+        "url": "https://github.com/deportationdata/ice-offices/raw/1915d7a7a5bf0c16a395102fc8140ad6cd8bc83e/data/ice-aor-county-shp.parquet",
+        "bytes": 16800306,
+        "sha256": "5358da3f6c9a800f59d45172ef20c59cfe6b2f74d01d385c0ee74fd8c6a696ec",
+        "data_license": "CC0-1.0",
+        "hash_verified": true
+      },
+      "unit": "One county-to-ERO-area assignment record; 3,230 county records plus one nongeographic HQ placeholder",
+      "temporal_semantics": "reference snapshot, not historical panel"
+    }
+  ]
+}
